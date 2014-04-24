@@ -47,14 +47,14 @@ simsij(nsims = 100, n = 256, proportion = P2, binsize = 1,
 %}
 \seealso{\code{\link{hfdenoise}}}
 \examples{
-
+\dontrun{
 a<-simsij(nsims=100)
 
 plot(a$est[1,,1])
 
 
 ##^^ shows 1st binomial Haar-Fisz estimate.
-
+}
 }
 \keyword{regression}% __ONLY ONE__ keyword per line
 

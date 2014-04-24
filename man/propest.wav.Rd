@@ -5,7 +5,8 @@
 Proportion estimation procedure for simulations.
 }
 \usage{
-propest.wav(proportion = P2, binsize=1,length = 256, times = 100, meth = "u", van = 6, fam = "DaubLeAsymm", min.level = 3)
+propest.wav(proportion = P2, binsize=1,length = 256, times = 100, meth = "u", van = 6, 
+fam = "DaubLeAsymm", min.level = 3)
 }
 %- maybe also 'usage' for other objects documented here.
 \arguments{
@@ -39,8 +40,9 @@ propest.wav(proportion = P2, binsize=1,length = 256, times = 100, meth = "u", va
 %}
 %\seealso{\code{\link{altpropest}}, \code{\link{hfdenoise}}}
 \examples{
-
-sim<-propest.wav(proportion = P2, binsize=1,length = 256, times = 1000, meth = "u", van = 6, fam = "DaubLeAsymm", min.level = 4)
+\dontrun{
+sim<-propest.wav(proportion = P2, binsize=1,length = 256, times = 1000, meth = "u", 
+van = 6, fam = "DaubLeAsymm", min.level = 4)
 
 plot(sim$x,sim$y,type="l",xlab="",ylab="Binomial mean function")
 
@@ -50,6 +52,7 @@ lines(sim$x,sim$meanfhat,col=2)
 lines(sim$x,sim$meanfhata,col=3)
 
 ##^^shows the estimates of the proportion from the two transforms.
+}
 }
 \keyword{regression}% __ONLY ONE__ keyword per line
 

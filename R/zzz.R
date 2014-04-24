@@ -1,9 +1,24 @@
-.First.lib <-function(lib,pkg)
+.onAttach <-function(lib,pkg)
 {
 ver <- read.dcf(file.path(lib, pkg, "DESCRIPTION"), "Version")
      ver <- as.character(ver)	
 
-#library.dynam("binhf",pkg,lib)
+curdate <- read.dcf(file.path(lib, pkg, "DESCRIPTION"), "Date")
+    curdate <- as.character(curdate)
 
-cat("binhf", ver, "loaded\n")
+# Welcome message (MAN):
+
+packageStartupMessage(paste(
+"\n",
+"**********************************************\n",
+"binhf: Haar-Fisz functions for binomial data\n\n",
+"--- Written by Matt Nunes ---\n",
+"  Current package version: ",ver," (",curdate,") \n\n",
+"\n",
+"**********************************************\n",
+"\n",
+
+"binhf", ver, "loaded\n")
+)
+
 }

@@ -4,7 +4,8 @@
 \description{Samples binomial Fisz and Anscombe transformed random variables on a grid of binomial probabilities.  
 }
 \usage{
-afgen(xgrid = seq(0, 1, length = 21), ygrid = seq(0, 1, length = 21), samples = 1000, binsize = 32)
+afgen(xgrid = seq(0, 1, length = 21), ygrid = seq(0, 1, length = 21), samples = 1000, 
+binsize = 32)
 }
 \arguments{
   \item{xgrid}{vector of x co-ordinate probabilities.}

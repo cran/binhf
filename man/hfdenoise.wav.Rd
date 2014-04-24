@@ -5,7 +5,8 @@
 Denoise algorithm for thresholding methods supplied with wavethresh.
 }
 \usage{
-hfdenoise.wav(x, binsize, transform = "binhf", meth = "u", van = 1, fam = "DaubExPhase", min.level = 3,coarse=FALSE)
+hfdenoise.wav(x, binsize, transform = "binhf", meth = "u", van = 1, fam = "DaubExPhase", 
+min.level = 3,coarse=FALSE)
 }
 \arguments{
   \item{x}{vector of observed values, of length a power of two.}

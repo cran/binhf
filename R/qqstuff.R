@@ -43,19 +43,19 @@ function (intensity, binsize = 4, paths = 100, respaths = 1000,
     bfqqmean <- apply(bfqqnorm, 1, mean)
     x <- qnorm((1:length(intensity) - 0.5)/length(intensity))
     if (plot.q == TRUE) {
-        X11()
+        getOption("device")()
         plot(sort(x), vqqmean, xlab = "Quantiles of Standard normal", 
             ylab = "Mean raw quantiles")
-        X11()
+        getOption("device")()
         plot(sort(x), Aqqmean, xlab = "Quantiles of Standard normal", 
             ylab = "Mean Anscombe quantiles")
-        X11()
+        getOption("device")()
         plot(sort(x), Bqqmean, xlab = "Quantiles of Standard normal", 
             ylab = "Mean Freeman-Tukey quantiles")
-        X11()
+        getOption("device")()
         plot(sort(x), bfqqmean, xlab = "Quantiles of Standard normal", 
             ylab = "Mean Nunes-Nason quantiles")
-        X11()
+        getOption("device")()
         plot(sort(x), vqqmean, xlab = "Quantiles of Standard normal", 
             ylab = "Mean raw quantiles")
         points(sort(x), Aqqmean, col = 2)
@@ -65,13 +65,13 @@ function (intensity, binsize = 4, paths = 100, respaths = 1000,
     }
     if (plot.sq == TRUE) {
         r <- range(c(Asqres, Bsqres, bfsqres))
-        X11()
+        getOption("device")()
         plot(Asqres, xlab = "", ylab = "Squared residuals (Anscombe)", 
             type = "l", ylim = r)
-        X11()
+        getOption("device")()
         plot(Bsqres, xlab = "", ylab = "Squared residuals (Freeman-Tukey)", 
             type = "l", ylim = r)
-        X11()
+        getOption("device")()
         plot(bfsqres, type = "l", xlab = "", ylab = "Squared residuals (Nunes-Nason)", 
             ylim = r)
     }

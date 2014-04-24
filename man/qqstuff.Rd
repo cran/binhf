@@ -6,7 +6,8 @@
 A function to generate Q-Q plots (from simulations) for the Anscombe and (binomial) Haar-Fisz transforms.
 }
 \usage{
-qqstuff(intensity, binsize = 4, paths = 100, respaths = 1000, plot.q = FALSE, plot.sq = FALSE)
+qqstuff(intensity, binsize = 4, paths = 100, respaths = 1000, plot.q = FALSE, 
+plot.sq = FALSE)
 }
 %- maybe also 'usage' for other objects documented here.
 \arguments{

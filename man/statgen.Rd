@@ -5,7 +5,8 @@
 This function generates useful simulation statistics for NN and Anscombe transforms. 
 }
 \usage{
-statgen(valuelist, xgrid = seq(0, 1, length = 21), ygrid = seq(0, 1, length = 21), binsize = 32, plot.m = FALSE, plot.v = FALSE, plot.ks = FALSE, ptype = "persp")
+statgen(valuelist, xgrid = seq(0, 1, length = 21), ygrid = seq(0, 1, length = 21), 
+binsize = 32, plot.m = FALSE, plot.v = FALSE, plot.ks = FALSE, ptype = "persp")
 }
 \arguments{
   \item{valuelist}{a two component list as produced by \env{afgen}.}
@@ -37,9 +38,11 @@ The function does several sample variance plots, Kolmogorov-Smirnov and mean plo
 
 \seealso{\code{\link{afgen}}}
 \examples{
-a<-afgen(xgrid = seq(0, 1, length = 21), ygrid = seq(0, 1, length = 21), samples = 1000, binsize = 32)
+a<-afgen(xgrid = seq(0, 1, length = 21), ygrid = seq(0, 1, length = 21), 
+samples = 1000, binsize = 32)
 
-b<-statgen(a,xgrid=seq(0,1,length=21),ygrid=seq(0,1,length=21),binsize=32,plot.m=FALSE,plot.v=TRUE,plot.ks=FALSE,ptype="persp")
+b<-statgen(a,xgrid=seq(0,1,length=21),ygrid=seq(0,1,length=21),binsize=32,plot.m=FALSE,
+plot.v=TRUE,plot.ks=FALSE,ptype="persp")
 
 }
 \keyword{manip}% at least one, from doc/KEYWORDS

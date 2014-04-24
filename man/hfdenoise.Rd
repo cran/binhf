@@ -5,8 +5,8 @@
 Proportion estimation procedure for simulations.
 }
 \usage{hfdenoise(n = 256, proportion = P2, binsize = 1, thrule = "ebayesthresh",
-    van = 8, fam = "DaubLeAsymm", pl = 3, prior = "laplace", vscale = "independent", plotstep = FALSE,
-    truncate = FALSE, ...)}
+    van = 8, fam = "DaubLeAsymm", pl = 3, prior = "laplace", vscale = "independent", 
+plotstep = FALSE, truncate = FALSE, ...)}
 \arguments{
   \item{n}{Length of vector to be sampled.}
   \item{proportion}{The function name of the proportion to be sampled.}

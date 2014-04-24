@@ -29,7 +29,7 @@ frmean <- apply(fr, c(1, 2), mean)
         }
     }
     if (plot.m == TRUE) {
-        X11()
+        getOption("device")()
         if (ptype == "persp") {
             persp(xgrid, ygrid, abs(afmean - asymean(xgrid, ygrid, 
                 binsize)), xlab = "p_1", ylab = "p_2", zlab = "", 
@@ -42,7 +42,7 @@ frmean <- apply(fr, c(1, 2), mean)
         }
     }
     if (plot.v == TRUE) {
-        X11()
+        getOption("device")()
         if (ptype == "persp") {
             persp(xgrid, ygrid, afvar, xlab = "p_1", ylab = "p_2", 
                 zlab = "Var(zeta(X_1,X_2))", ticktype = "detailed", 
@@ -52,7 +52,7 @@ frmean <- apply(fr, c(1, 2), mean)
         if (ptype == "contour") {
             contour(xgrid, ygrid, afvar, xlab = "p_1", ylab = "p_2")
         }
-        X11()
+        getOption("device")()
         plot(xgrid[2:(length(xgrid) - 1)], diag(afvar)[2:(length(xgrid) - 
             1)], type = "l", ylim = c(0, 1.2), xlab = "binomial probability", 
             ylab = "variance")
@@ -60,7 +60,7 @@ frmean <- apply(fr, c(1, 2), mean)
             1)], lty = 2)
 	  lines(xgrid[2:(length(xgrid) - 1)], diag(frvar)[2:(length(xgrid) - 
             1)], lty = 3)
-        X11()
+        getOption("device")()
         plot(xgrid[2:(length(xgrid) - 1)], (1 - diag(afvar)[2:(length(xgrid) - 
             1)])^2, type = "l", ylim = c(0, 1), xlab = "binomial probability", 
             ylab = "residual")
@@ -71,29 +71,29 @@ frmean <- apply(fr, c(1, 2), mean)
 
     }
     if (plot.ks == TRUE) {
-        X11()
+        getOption("device")()
        if (ptype == "persp") {
             persp(xgrid, ygrid, anks - afks, xlab = "p_1", ylab = "p_2", 
                 zlab = "", ticktype = "detailed", theta = -30, 
                 phi = 15, scale = FALSE)
-	  X11()
+	  getOption("device")()
 		persp(xgrid, ygrid, frks - afks, xlab = "p_1", ylab = "p_2", 
                 zlab = "", ticktype = "detailed", theta = -30, 
                 phi = 15, scale = FALSE)
-	X11()
+	getOption("device")()
 		 persp(xgrid, ygrid, anks - frks, xlab = "p_1", ylab = "p_2",
                 zlab = "", ticktype = "detailed", theta = -30,
                 phi = 15, scale = FALSE)
 
         }
         if (ptype == "contour") {
-	X11()
+	getOption("device")()
             contour(xgrid, ygrid, anks - afks, xlab = "p_1", 
                 ylab = "p_2")
-	X11()
+	getOption("device")()
 		contour(xgrid, ygrid, frks - afks, xlab = "p_1", 
                 ylab = "p_2")
-	X11()
+	getOption("device")()
 	contour(xgrid, ygrid, anks - frks, xlab = "p_1",
                 ylab = "p_2")
         }
