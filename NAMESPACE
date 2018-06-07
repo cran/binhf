@@ -9,3 +9,8 @@ import(
   wavethresh,
   adlift
 )
+ importFrom("graphics", "abline", "contour", "lines", "persp", "plot",
+             "points")
+importFrom("stats", "filter", "ks.test", "mad", "na.omit", "nlminb",
+             "optim", "qnorm", "qqnorm", "rbinom", "var")
+importFrom("EbayesThresh","beta.laplace","ebayesthresh","ebayesthresh.wavelet","wfromt")

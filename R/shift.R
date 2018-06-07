@@ -11,7 +11,9 @@ else {if (d=="l" & places<0){d<-"r"}}
 
 
 n<-length(v)
-
+if(n==1){
+	places<-0
+}
 p<-abs(places)
 
 if (p==0){vnew<-v}
