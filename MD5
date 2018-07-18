@@ -1,4 +1,4 @@
-2351256853f7b4027f1e440000e78206 *DESCRIPTION
+9fbbf97ba67a2b674d5ecc19e7d44381 *DESCRIPTION
 499e32d5aead2f872531fa9e458e090c *NAMESPACE
 7beeb8363a460091c713166e8eeff0b1 *R/Blocks.R
 a9a4a7cc06d0f5bd8cf80fea3c134972 *R/Blocksr.R
@@ -39,10 +39,10 @@ fe9074a00ed8299b8f6ea3a947aaba09 *R/sinlog.R
 ac7fde31c0de80a4c5477d7f838ab0e1 *R/sinlogr.R
 c3de4a2c0cb6e8cbc6906aefa7ff5733 *R/statgen.R
 5642d3641f45ee82163017c35a476f35 *R/zzz.R
-77e04ab8cef9f6da1e8f1881d77f6f75 *data/chr20.rda
+6e7c18a69e1472ddd243803ef0008c3a *data/chr20.rda
 f29d3772205537e6c4422a310bb47c8e *data/datalist
-983d77aaab52b1a4c2d972d941224336 *data/mhc.rda
-018289003714530bbd056a9ecd69e80f *data/pintens.rda
+104f1534e10a3535c558fc1ac3c2bfab *data/mhc.rda
+636c7c8255f1fdb5cccb288c58e485da *data/pintens.rda
 52a52ca2107c4d248aefee57c38882e9 *man/Blocks.Rd
 1765353a8922e542070773770c572b03 *man/afgen.Rd
 ca2dc91d51adc57189fa92532fcc893a *man/ansc.Rd
